@@ -27,7 +27,7 @@
     - "{{ devices }}"
   changed_when: false
   failed_when: false
-  check_mode: no
+  always_run: true
   register: parted_results
 
 - name: include copy_configs.yml
